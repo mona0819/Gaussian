@@ -10,87 +10,14 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 ## Algorithm
 1. Read the number of unknowns n and form the augmented matrix [A | B].
 2. Convert the augmented matrix into upper triangular form using row operations:
-
-𝑅
-𝑗
-=
-𝑅
-𝑗
-−
-(
-𝑎
-𝑗
-𝑖
-𝑎
-𝑖
-𝑖
-)
-𝑅
-𝑖
-R
-j
-	​
-
-=R
-j
-	​
-
-−(
-a
-ii
-	​
-
-a
-ji
-	​
-
-	​
-
-)R
-i
-	​
-
 3. Check that no pivot element 
 𝑎
 𝑖
 𝑖
 =
 0
-a
-ii
-	​
-
-=0.
 If zero → system cannot be solved (division by zero)
 4. Use Backward Substitution to find the values of unknowns 
-𝑥
-𝑛
-,
-𝑥
-𝑛
-−
-1
-,
-.
-.
-.
-,
-𝑥
-1
-x
-n
-	​
-
-,x
-n−1
-	​
-
-,...,x
-1
-	​
-
-.
-
 ## Program:
 ```
 /*
